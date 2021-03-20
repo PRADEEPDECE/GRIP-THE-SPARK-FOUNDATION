@@ -1,11 +1,10 @@
 #Author: PRADEEP K 
-
-#Decision Trees IRIS
+#Prediction using Decision Tree Algorithm
+#Create the Decision Tree classifier and visualize it graphically.
 
 library(rpart)
 library(rpart.plot)
 library(e1071)
-
 head(iris)
 iris
 decision_tree_model<-rpart(Species ~ ., data = iris, method = "class")
